@@ -1,4 +1,4 @@
-# NSara-Project-2.github.io
+# NSara-Project-2
 
 # Project 2 - Landing Page
 
