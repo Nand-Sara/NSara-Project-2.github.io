@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset = "utf-8">
+		<title>Welcome to our App Landing Page!</title>
+		
+		<!-- Viewport to ensure responsiveness in all devices -->
+		<meta name = "viewport" content = "width=device-width,  initial-scale=1">
+		
+		<!-- Compatibility with Edge browser -->
+		<meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+		
+		<!-- Stylesheet for the entire landing page -->
+		<link rel = "stylesheet" href = "https://NSara-Project-2.github.io/styles/landing-page.css">
+		
+		<!-- Font awesome css library for icons used in the code -->
+		<link rel= "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	
+		<!-- cdn AJAX library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+		
+		<!-- Script for smooth scrolling behavior -->
+		<script>
+			$(document).ready(function(){
+				$("a").on('click',function(event){
+					if(this.hash !== ""){
+						event.preventDefault();
+						var hash = this.hash;
+						$('html, body').animate({scrollTop: $(hash).offset().top}, 800, function(){
+							window.location.hash = hash;
+						});
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<!-- GRID LAYOUT -->
+		<div class = "window">
+			<!-- START OF HEADER -->
+			<header>
+				<!-- Navigation Menu -->
+				<nav>
+					<!-- Brand Logo -->
+					<div class = "logo"></div>
+					<!-- Menu bar icon -->			
+					<div class = "menu"></div>
+					<!-- Navigation Menu Links -->
+					<ul id = "navlist" class = "navlist"></ul>
+				</nav>
+				
+				<!-- Top section -->
+				<div id = "home" class = "accordian" style = "display: none"></div>
+				<div class = "announcement">
+					<h1>We have a BIG Announcement!</h1>
+					<p>We are launching our new and improved application, loaded with all of the latest features, built with the best-in-class security patches and high quality content.<br> Please look forward to the launch date!</p>
+					
+					<!-- Countdown Timer upto launch date -->
+					<div id = "countdown">
+						<div id = "days">
+							<span id = "dayNo"></span>
+							<span id = "dayTxt"></span>
+						</div>
+						<div id = "hours">
+							<span id = "hrNo"></span>
+							<span id = "hrTxt"></span>
+						</div>
+						<div id = "minutes">
+							<span id = "minNo"></span>
+							<span id = "minTxt"></span>
+						</div>
+						<div id = "seconds">
+							<span id = "secNo"></span>
+							<span id = "secTxt"></span>
+						</div>
+					</div>
+					
+					<!-- Call to Action -->
+					<form>
+					<div>
+						<input type = "email" placeholder = "Enter your email..." required />
+					</div>
+					<div>
+						<button type = "submit">SUBSCRIBE</button>
+					</div>
+					</form>
+				</div>
+			</header>		
+			<!-- END OF HEADER -->
+			
+			<!-- START OF MAIN -->
+			<main>
+				<!-- FEATURES -->
+				<!-- Collapsible section -->
+				<div class = "accordian" id = "feat">
+					<h1>Features</h1>
+					<button class = "accordian-btn">
+						<i class = "fa-solid fa-circle-plus"  id = "accordian-icon"></i>
+					</button>
+				</div>
+				
+				<!-- Collapsible section content -->
+				<div class = "accordian-content">
+					<div class = "content-box">
+					
+						<!-- Title -->
+						<h1 style = "color: #000">FEATURES</h1>
+						<hr style = "width: 40%">
+					</div>
+					
+					<!-- Feature 1 -->
+					<!-- Icons -->
+					<div class = "content-box">
+						<span style = "display: flex; flex-direction: row; justify-content: space-evenly">
+							<i class = "fa-solid fa-desktop" id = "main-icon"></i>
+							<i class = "fa-solid fa-laptop" id = "main-icon"></i>
+							<i class = "fa-solid fa-tablet-screen-button" id = "main-icon"></i>
+							<i class = "fa-solid fa-mobile-screen-button" id = "main-icon"></i>
+						</span>
+					</div>
+					
+					<!-- Description -->
+					<div class = "content-box">
+						<h2>Responsive Design</h2>
+						<p>Our app can be seamlessly used across all devices and has a very user-friendly interface.</p>
+					</div>
+					<hr>
+					
+					<!-- Feature 2 -->
+					<!-- Icon -->
+					<div class = "content-box">
+						<i class = "fa-solid fa-battery-full" id = "main-icon"></i>
+					</div>
+					
+					<!-- Description -->
+					<div class = "content-box">
+						<h2>Battery Saving</h2>
+						<p>Due to our light-weight code, the battery consumption is miniscule and can be used for longer hours with our toggle option to turn off backend operations when it is not needed.</p>
+					</div>
+					<hr>
+					
+					<!-- Feature 3 -->
+					<!-- Icon -->
+					<div class = "content-box">
+						<i class = "fa-solid fa-comment-dots" id = "main-icon"></i>
+					</div>
+					
+					<!-- Description -->
+					<div class = "content-box">
+						<h2>24/7 Support</h2>
+						<p>We've added a new chatbot feature that enables users to contact our helpdesk anytime for any queries.</p>
+					</div>
+					<hr>
+					
+					<!-- Feature 4 -->
+					<!-- Icon -->
+					<div class = "content-box">
+						<i class = "fa-solid fa-shield-halved" id = "main-icon"></i>
+					</div>
+					
+					<!-- Description -->
+					<div class = "content-box">
+						<h2>Secure & Private</h2>
+						<p>Through our unique and agile <abbr title = "Software Development Life Cycle">SDLC</abbr> approach, we ensure that all the safety and privacy guidlines are strictly adhered to, and are verfied by our Data Safety and Security Experts.</p>
+					</div>
+					<hr>
+					
+					<!-- Feature 5 -->
+					<!-- Icon -->
+					<div class = "content-box">
+						<i class = "fa-solid fa-user-lock" id = "main-icon"></i>
+					</div>
+					
+					<!-- Description -->
+					<div class = "content-box">
+						<h2>Protected</h2>
+						<p>Our app is built with <abbr title = "Multifactor Authentication">MFA</abbr>, ensuring data protection and accessiblity via the user's login credentials and an authcode from our Authenticator App.</p>
+					</div>
+				</div>
+				<!-- END OF FEATURES SECTION -->
+				
+				<!-- ABOUT US -->
+				<!-- Collapsible Section -->
+				<div class = "accordian" id = "about">
+					<h1>About Us</h1>
+					<button class = "accordian-btn">
+						<i class = "fa-solid fa-circle-plus"  id = "accordian-icon"></i>
+					</button>
+				</div>
+				
+				<!-- Collapsible section Content -->
+				<div class = "accordian-content">
+					<div class = "content-box">
+					
+						<!-- Title -->
+						<h1 style = "color: #000">MEET THE TEAM</h1>
+						<hr style = "width: 40%">
+					</div>
+					
+					<!-- Team members flexbox -->
+					<div class = "team">
+						
+						<!-- Team Member 1-->
+						<!-- Profile card -->
+						<div class = "team-card">
+							<div>
+								<!-- Avatar Image -->
+								<img src = "C:\Users\A\Documents\Front end development\Udacity Front End Development Nanodegree\Project - 2_Landing-page\assets\avatar_7.jpg" class = "team-avatar" alt = "Team Member 1 - Project Lead"/>
+							</div>
+							<!-- Details -->
+							<div class = "team-title">Team Member 1</div>
+							<div class = "team-details">
+								<p>Project Lead</p>
+							</div>
+						</div>
+						
+						<!-- Team Member 2 -->
+						<div class = "team-card">
+							<div>
+								<!-- Avatar -->
+								<img src = "C:\Users\A\Documents\Front end development\Udacity Front End Development Nanodegree\Project - 2_Landing-page\assets\avatar_1.jpg" class = "team-avatar" alt = "Team Member 2 - Developer" />
+							</div>
+							<!-- Details -->
+							<div class = "team-title">Team Member 2</div>
+							<div class = "team-details">
+								<p>Developer</p>
+							</div>
+						</div>
+						
+						<!-- Team Member 3 -->
+						<div class = "team-card">
+							<div>
+								<!-- Avatar -->
+								<img src = "C:\Users\A\Documents\Front end development\Udacity Front End Development Nanodegree\Project - 2_Landing-page\assets\avatar_4.jpg" class = "team-avatar" alt = "Team Member 3 - UI/UX Designer" />
+							</div>
+							<!-- Details -->
+							<div class = "team-title">Team Member 3</div>
+							<div class = "team-details">
+								<p>UI/UX Designer</p>
+							</div>
+						</div>
+						
+						<!-- Team Member 4 -->
+						<div class = "team-card">
+							<div>
+								<!-- Avatar -->
+								<img src = "C:\Users\A\Documents\Front end development\Udacity Front End Development Nanodegree\Project - 2_Landing-page\assets\avatar_5.jpg" class = "team-avatar" alt = "Team Member 4 - SEO Specialist" />
+							</div>
+							<!-- Details -->
+							<div class = "team-title">Team Member 4</div>
+							<div class = "team-details">
+								<p>SEO Specialist</p>
+							</div>	
+						</div>
+						
+						<!-- Team Member 5 -->
+						<div class = "team-card">
+							<div>
+								<!-- Avatar -->
+								<img src = "C:\Users\A\Documents\Front end development\Udacity Front End Development Nanodegree\Project - 2_Landing-page\assets\avatar_6.jpg" class = "team-avatar" alt = "Team Member 5 - QA Engineer" />
+							</div>
+							
+							<!-- Details -->
+							<div class = "team-title">Team Member 5</div>
+							<div class = "team-details">
+								<p>QA Engineer</p>
+							</div>
+						</div>
+						
+						<!-- Team Member 6 -->
+						<div class = "team-card">
+							<div>
+								<!-- Avatar -->
+								<img src = "C:\Users\A\Documents\Front end development\Udacity Front End Development Nanodegree\Project - 2_Landing-page\assets\avatar_2.jpg" class = "team-avatar" alt = "Team Member 6 - Business Analyst" />
+							</div>
+							<!-- Details -->
+							<div class = "team-title">Team Member 6</div>
+							<div class = "team-details">
+								<p>Business Analyst</p>
+							</div>
+						</div>
+					</div>
+					<div class = "content-box">
+						<hr style = "width: 40%">
+					</div>
+				</div>
+				<!-- END OF ABOUT US SECTION -->
+				
+				<!-- OUR CLIENTS -->
+				<!-- Collapsible section -->
+				<div class = "accordian" id = "clients">
+					<h1>Our Clients</h1>
+					<button class = "accordian-btn">
+						<i class = "fa-solid fa-circle-plus" id = "accordian-icon"></i>
+					</button>
+				</div>
+				
+				<!-- Collapsible Content -->
+				<div class = "accordian-content">
+					<div class = "content-box">
+					
+						<!-- Title -->
+						<h1 style = "color: #000">CLIENT TESTIMONIALS</h1>
+						<hr style = "width: 40%">
+					</div>
+					
+					<!-- Description -->
+					<div class = "content-box">
+						<p>Listen to what our clients say about our products and services.</p>
+					</div>
+					
+					<!-- Slideshow container -->
+					<div class = "slideshow-box">
+						<!-- Slide 1 -->
+						<div class = "slides">
+							<q>Amazing!</q>
+							<p class = "client">- Oscar Wilde</p>
+						</div>
+						<!-- Slide 2 -->
+						<div class = "slides">
+							<q>Easy to use.</q>
+							<p class = "client">- Jane Austen</p>
+						</div>
+						<!-- Slide 3 -->
+						<div class = "slides">
+							<q>Very good experience.</q>
+							<p class = "client">- Agatha Christie</p>
+						</div>
+						<!-- Slide 4 -->
+						<div class = "slides">
+							<q>Useful for everyday tasks.</q>
+							<p class = "client">- William Wordsworth</p>
+						</div>
+						
+						<!-- Previous Slide Button -->
+						<button class = "prev" onclick = "plusSlides(-1)"><i class = "fa-solid fa-chevron-left"></i></button>
+						<!-- Next Slide Button -->
+						<button class = "next" onclick = "plusSlides(1)"><i class = "fa-solid fa-chevron-right"></i></button>
+					</div>
+					
+					<!-- Bullet Points for each slide -->
+					<div class = "bullet-box">
+						<div class = "bullet" onclick = "currentSlide(1)"></div>
+						<div class = "bullet" onclick = "currentSlide(2)"></div>
+						<div class = "bullet" onclick = "currentSlide(3)"></div>
+						<div class = "bullet" onclick = "currentSlide(4)"></div>
+					</div>
+					<div class = "content-box">
+						<hr style = "width: 40%">
+					</div>
+				</div>
+				<!-- END OF OUR CLIENTS SECTION -->
+				
+				<!-- PLANS & PRICING -->
+				<!-- Collapsible Section -->
+				<div class = "accordian" id = "plans">
+					<h1>Plans & Pricing</h1>
+					<button class = "accordian-btn">
+						<i class = "fa-solid fa-circle-plus" id = "accordian-icon"></i>
+					</button>
+				</div>
+				
+				<!-- Collapsible Section Content  -->
+				<div class = "accordian-content">
+					<div class = "content-box">
+						<!-- Title -->
+						<h1 style = "color: #000">PLANS AND PRICING</h1>
+						<hr style = "width: 40%">
+					</div>
+					<!-- Description -->
+					<div class = "content-box">
+						<p>One size doesn't fit all. Check out our plans for each individual, team and enterprise and subscribe today!</p>
+					</div><br>
+					
+					<!-- Plans & Pricing Flexbox -->
+					<div class = "plans">
+						<!-- Free Plan -->
+						<div class = "plan-card">
+							<div class = "plan-details" id = "free">
+								<div class = "plan-title">FREE</div><br>
+								<div class = "plan-amt"><span>$</span>0</div><br>
+								<ul>
+									<li>1 User</li>
+									<li>Limited Features</li>
+									<li>100 Free Templates</li>
+								</ul>
+							</div>
+						</div>
+						
+						<!-- Standard Plan -->
+						<div class = "plan-card">
+							<div class = "plan-details" id = "standard">
+								<div class = "plan-title">STANDARD</div><br>
+								<div class = "plan-amt"><span>$</span>15/<span>MONTH</span></div><br>
+								<ul>
+									<li>10 Users</li>
+									<li>Additional Features</li>
+									<li>100 Free Templates + 300 Professional Templates</li>
+								</ul>
+							</div>
+							<div class = "plan-discount">20% off</div>
+						</div>
+						
+						<!-- Premium Plan -->
+						<div class = "plan-card">
+							<div class = "plan-details" id = "premium">
+								<div class = "plan-title">PREMIUM</div><br>
+								<div class = "plan-amt"><span>$</span>45/<span>MONTH</span></div>
+								<ul style = "font-size: 0.9em">
+									<li>50 Users</li>
+									<li>Additional Features + Extended Service</li>
+									<li>Standard Plan Templates + 100 Customized Templates</li>
+								</ul>
+							</div>
+							<div class = "plan-discount">40% off</div>
+						</div>
+						
+						<!-- Enterprise Plan -->
+						<div class = "plan-card">
+							<div class = "plan-details" id = "enterprise">
+								<div class = "plan-title">ENTERPRISE</div><br>
+								<div class = "plan-amt"><span>$</span>375/<span>MONTH</span></div>
+								<ul style = "font-size: 0.9em">
+									<li>500 Users</li>
+									<li>Unlimited Features + 24/7 Service</li>
+									<li>Premium Plan Templates + 500 Customized Templates</li>
+								</ul>
+							</div>
+							<div class = "plan-discount">50% off</div>
+						</div>
+					</div>
+					<div class = "content-box">
+						<hr style = "width: 40%">
+					</div>
+				</div>
+				<!-- END OF PLANS & PRICING SECTION -->
+				
+				<!-- FAQs -->
+				<!-- Collapsible Section -->
+				<div class = "accordian" id = "faqs">
+					<h1>FAQ Section</h1>
+					<button class = "accordian-btn">
+						<i class = "fa-solid fa-circle-plus" id = "accordian-icon"></i>
+					</button>
+				</div>
+				
+				<!-- Collapsible Content -->
+				<div class = "accordian-content">
+					<div class = "content-box">
+						<!-- Title -->
+						<h1 style = "color: #000">FREQUENTLY ASKED QUESTIONS</h1>
+						<hr style = "width: 40%">
+					</div>
+					
+					<!-- Description -->
+					<div class = "content-box">
+						<p>Here are the answers to some of the questions that we frequently get from our clients.</p>
+					</div><br>
+					
+					<!-- Question 1 -->
+					<div class = "faq-btn">
+						<div class = "faq-ques">How many free hours of support?</div>
+						<i class = "fa-regular fa-square-plus" id = "faq-icon"></i>
+					</div>
+					<!-- Answer -->
+					<div class = "faq-ans">
+						<div>75 hours</div>
+					</div>
+					<br>
+					
+					<!-- Question 2 -->
+					<div class = "faq-btn">
+						<div class = "faq-ques">What types of payment are accepted?</div>
+						<i class = "fa-regular fa-square-plus" id = "faq-icon"></i>
+					</div>
+					<!-- Answer -->
+					<div class = "faq-ans">
+						<div>We accept credit card, debit card, net banking, and payments via UPI. There is a wallet option available.</div>
+					</div>
+					<br>
+					
+					<!-- Question 3 -->
+					<div class = "faq-btn">
+						<div class = "faq-ques">Are there any self-help videos?</div>
+						<i class = "fa-regular fa-square-plus" id = "faq-icon"></i>
+					</div>
+					<!-- Answer -->
+					<div class = "faq-ans">
+						<div>Yes, our app comes with a step-by-step tutorial, that can be revisited anytime.</div>
+					</div>
+					<br>
+					
+					<!-- Question 4 -->
+					<div class = "faq-btn">
+						<div class = "faq-ques">Is multi-device sync available?</div>
+						<i class = "fa-regular fa-square-plus" id = "faq-icon"></i>
+					</div>
+					<!-- Answer -->
+					<div class = "faq-ans">
+						<div>Yes, since our app operates within the cloud, any progress is automatically saved and can be accessed from other devices that comply with the GDPR rules.</div>
+					</div>
+					<br>
+					
+					<!-- Question 4 -->
+					<div class = "faq-btn">
+						<div class = "faq-ques">How frequent is the app updated?</div>
+						<i class = "fa-regular fa-square-plus" id = "faq-icon"></i>
+					</div>
+					<!-- Answer -->
+					<div class = "faq-ans">
+						<div>Since our services are cloud based, there is a bi-annual version update that takes place on the 3rd Sunday of September and the 2nd Sunday of March during which, all activities are suspended and the app will be under maintenance. Clients will be notified 2 weeks prior to the maintenance schedule.</div>
+					</div>
+					<br>
+				</div>
+				<!-- END OF FAQ SECTION -->
+				
+				<!-- CONTACT US -->
+				<!-- Collapsible Section -->
+				<div class = "accordian" id = "contact">
+					
+					<!-- Title -->
+					<h1>Contact Us</h1>
+					<button class = "accordian-btn">
+						<i class = "fa-solid fa-circle-plus" id = "accordian-icon"></i>
+					</button>
+					
+				<!-- Collapsible Content -->	
+				</div>
+				<div class = "accordian-content">
+					<br>
+					<div class = "contact-box">
+						<div class = "contact-blk">
+							<!-- Title -->
+							<div class = "contact-title">Contact<br>
+								<span style = "font-size: 16px">Send us your queries below:</span>
+							</div>
+							<i class = "fa-solid fa-paper-plane"id = "contact-icon"></i>
+						</div>
+						<form>
+							<!-- Name -->
+							<div>
+								<input type = "text" placeholder = "Name..." required />
+							</div>
+							<!-- Email -->
+							<div>
+								<input type = "email", placeholder = "Email..." required />
+							</div>
+							<!-- Message Textarea -->
+							<div>
+								<textarea rows = "20" cols = "23" maxlength = "1000" placeholder = "Your message here..." required></textarea>
+							</div>
+							<div>
+								<button type = "submit">SEND MESSAGE</button>
+							</div>
+						</form>
+					</div>
+					<br>
+				</div>
+				<!-- END OF CONTACT US SECTION -->
+				
+				<!-- TERMS AND PRIVACY POLICY -->
+				<!-- Collapsible Section -->
+				<div class = "accordian" id = "terms">
+					<h1>Terms & Privacy</h1>
+					<button class = "accordian-btn">
+						<i class = "fa-solid fa-circle-plus" id = "accordian-icon"></i>
+					</button>
+				</div>
+				
+				<!-- Collapsible Content -->
+				<div class = "accordian-content">
+					<div class = "accept-button" style = "font-size: 30px" onclick = "showTerms()">Terms & Conditions and Privacy Policy</div>
+				</div>
+				<!-- END OF TERMS AND PRIVACY POLICY SECTION -->
+				
+			</main>
+			<!-- END OF MAIN -->
+			
+			<!-- Terms & Conditions and Privacy Policy Page as overlay onclick of the button within the TERMS AND PRIVACY POLICY section -->
+			<div id = "overlay">
+				<div class = "terms-box">
+				
+					<!-- Terms & Conditions list -->
+					<div class = "terms-title">Terms & Conditions</div>
+					<ol>
+						<li>Terms of Payment, Activity, Conduct</li>
+						<li>Fees to be paid in case of default</li>
+						<li>Copyright rules and Trademarks</li>
+						<li>Protection of Intellectual Property</li>
+						<li>Procedure to cancel subscription</li>
+						<li>Deactivation and deletion of account</li>
+					</ol>
+					<!-- Privacy Policy list -->
+					<div class = "terms-title">Privacy Policy</div>
+					<ol>
+						<li>How data is collected</li>
+						<li>Usage of personal information</li>
+						<li>Monitoring activity</li>
+						<li>Request to access and delete data</li>
+						<li>Protection of user identity</li>
+						<li>Data transfer methods</li>
+						<li>Collect, manage and use data as per GDPR guidelines</li>
+						<li>Data retention period</li>
+					</ol>
+					<button class = "accept-button" onclick = "closeTerms()">I HAVE READ AND I CONSENT</button>
+				</div>
+			</div>
+			<!-- END OF OVERLAY TERMS AND CONDITION PAGE -->
+			
+			<!-- START OF FOOTER -->
+			<!-- Company Logo, Vision Statement, Contact Info, Links to other sections, Image Credits, Social Media-->
+			<footer>
+				<span>
+				<!-- Company Logo -->
+				<div style = "font-family: 'Trebuchet MS', sans-serif; font-size: 30px">Apps4u</div>
+				<div>
+					<!-- Vision Statement -->
+					<p>We are a growing company specializing in the field of Cloud and SaaS applications, constantly driven by our passion to exceed the expectations of our customers.</p>
+				</div>
+				<br><br>
+				
+				<!-- Contact Information -->
+				<div style = "font-family: 'Josefin Sans', sans-serif; font-size: 20px;">CONTACT</div>
+				<div>
+					<p><i class = "fa-solid fa-location-dot"></i>#12345, India</p>
+					<p><i class = "fa-solid fa-phone"></i>(123)-456-7890</p>
+					<a href = "mailto:apps4u@domain.com"><i class = "fa-solid fa-at"></i>apps4u@domain.com</a>
+				</div>
+				</span>
+				<br><br>
+				
+				<!-- Links to Other Sections -->
+				<span>
+				<div style = "font-family: 'Josefin Sans', sans-serif; font-size: 20px;">LINKS</div>
+				<div>
+					<a href = "#home">Home</a>
+					<a href = "#feat">Features</a>
+					<a href = "#about">About Us</a>
+					<a href = "#clients">Our Clients</a>
+					<a href = "#plans">Plans & Pricing</a>
+					<a href = "#faqs">FAQs</a>
+					<a href = "#contact">Contact Us</a>
+					<a href = "#terms">Terms</a>
+				</div>
+				</span>
+				<br><br>
+				
+				<!-- Image Credits -->
+				<span>
+				<div style = "font-family: 'Josefin Sans', sans-serif; font-size: 20px;">IMAGE CREDITS</div>
+				<p>Team Member 1: Image by 
+					<a href="https://www.freepik.com/free-psd/3d-illustration-business-man-with-glasses_27470333.htm#&position=0&from_view=collections">Freepik</a> 
+				</p>
+				<p>Team Member 2: Image by 
+					<a href="https://www.freepik.com/free-psd/3d-illustration-person-with-glasses_27470370.htm">Freepik</a>
+				</p>
+				<p>Team Member 3: Image by
+					<a href="https://www.freepik.com/free-psd/3d-illustration-person-with-sunglasses_27470359.htm#query=3d%20avatar&position=25&from_view=search&track=ais">Freepik</a>
+				</p>
+				<p>Team Member 4: Image by
+					<a href="https://www.freepik.com/free-psd/3d-illustration-person-with-glasses_27470336.htm">Freepik</a>
+				</p>
+				<p>Team Member 5: Image by
+					<a href="https://www.freepik.com/free-psd/3d-illustration-person-with-sunglasses_27470334.htm#query=3d%20avatar&position=0&from_view=search&track=ais">Freepik</a>
+				</p>
+				<p>Team Member 6: Image by
+					<a href="https://www.freepik.com/free-psd/3d-illustration-person-with-pink-hat_27470373.htm#&position=27&from_view=collections">Freepik</a>
+				</p>
+				</span>
+				
+				<!-- Social Media -->
+				<span>
+				<div id = "social">
+					<a href = "#linkedin"><i class = "fa-brands fa-linkedin"></i></a>
+					<div><a href = "#facebook"><i class = "fa-brands fa-facebook"></i></a></div>
+					<div><a href = "#instagram"><i class = "fa-brands fa-instagram"></i></a></div>
+					<div><a href = "#twitter"><i class = "fa-brands fa-twitter"></i></a></div>
+				</div>
+				</span>
+			</footer>
+			<!-- END OF FOOTER -->
+		
+		</div>
+		<!-- END OF GRID -->
+		
+		<!-- Javascript for the entire page -->
+		<script src = "https://NSara-Project-2.github.io/scripts/landing-page.js">
+		</script>
+	</body>
+</html>		
