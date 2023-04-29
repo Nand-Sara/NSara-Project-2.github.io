@@ -842,6 +842,23 @@ footer i{
 	font-size: 20px;
 }
 
+/* Display dimensions on scroll with respect to the viewport */
+#rect{
+	display: none;
+	width: auto;
+	padding: 10px 30px;
+	background: rgba(0,0,0,0.8);
+	color: #fff;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	position: fixed;
+	z-index: 200;
+	text-align: center;
+	bottom: 0;
+	right: 0;
+}
+
 /* Media queries for medium sized screens */
 @media screen and (max-width: 1080px){
 	nav{
