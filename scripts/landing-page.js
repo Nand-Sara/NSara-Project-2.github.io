@@ -82,6 +82,24 @@ let sections = document.querySelectorAll(".accordian");
 
 /* Add scrolling event to the window to scroll to the respective section */
 window.addEventListener("scroll", () => {
+	const container = document.getElementById("rect");
+	const elem = document.querySelector("body");
+	const rect = elem.getBoundingClientRect();
+	
+	/* function to get the position and dimensions of an element with respect to the viewport */
+	container.innerHTML = "";
+	for (const key in rect){
+		if (typeof rect[key] !== "function") {
+			let para = document.createElement("p");
+			para.textContent = `| ${key} : ${rect[key]} |`;
+			container.appendChild(para);
+		}
+	}
+	container.style.display = "flex";
+	if (screen.width <= 500){
+			container.style.display = "block";
+	}
+	setTimeout(function(){container.style.display = "none";}, 10000); // Hide the statistics after 10s
 	let current = "";
 	sections.forEach(section => {
 		let sectionTop = -100 + section.offsetTop;
@@ -128,24 +146,6 @@ btn.onclick = () => {
 /* Hide navigation bar on scroll down and reappear on scroll up with fade animation*/
 let prevScrollPos = window.pageYOffset;
 window.onscroll = () => {
-	const container = document.getElementById("rect");
-	const elem = document.querySelector("body");
-	const rect = elem.getBoundingClientRect();
-	
-	/* function to get the position and dimensions of an element with respect to the viewport */
-	container.innerHTML = "";
-	for (const key in rect) {
-		if (typeof rect[key] !== "function") {
-			let para = document.createElement("p");
-			para.textContent = `| ${key} : ${rect[key]} |`;
-			container.appendChild(para);
-		}
-	}
-	container.style.display = "flex";
-	if (screen.width <= 500){
-			container.style.display = "block";
-	}
-	setTimeout(function(){container.style.display = "none";}, 10000); // Hide the statistics after 10s
 	let currentScrollPos = window.pageYOffset;
 	if(currentScrollPos > prevScrollPos){
 		document.querySelector("nav").classList.add("fadeOut");
