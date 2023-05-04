@@ -335,6 +335,7 @@ main{
 	overflow: hidden;
 	background: #fff;
 	height: auto;
+	transition: 0.6s ease-in-out;
 }
 
 /* Alignment of content within the content block */
@@ -678,6 +679,7 @@ q{
 	color: #666;
 	overflow: hidden;
 	height: auto;
+	transition: 0.6s ease-in-out;
 }
 
 /* Active class to question which is open */
