@@ -168,11 +168,6 @@ A hover effect has also been added whenever the mouse hovers over a section.
 
 <br>
 
-## Installation
-
-
-[(Back to top)](#table-of-contents)
-
 ## Usage
 
 This is a sample landing page.
@@ -180,7 +175,71 @@ This project can be used as a template or as reference for front end development
 
 [(Back to top)](#table-of-contents)
 
+<br>
+
+## Installation
+
+To run this project locally the following methods can be used:
+
+### Clone the Repository with HTTPS URLs
+
+#### Step 1: Copy the URL
+
+1. Visit the main page of the repository: [GitHub Repo](https://github.com/Nand-Sara/nsara_project_2)
+2. Click on **<> Code** and copy the url from the **HTTPS** tab
+
+<br>
+
+![Cloning using HTTPS url](https://nand-sara.github.io/nsara_project_2/assets/documentation/https-clone.png "Copy the link on the HTTPS tab")
+
+*Copy the URL on the HTTPS tab*
+
+(Or)
+
+Copy the HTTPS url from below: 
+```sh
+https://github.com/Nand-Sara/nsara_project_2.git
+```
+
+#### Step 2: Clone the Repository
+
+1. Open **Git Bash** (for Windows users) or **Terminal** (for Mac and Linux users)
+
+<br>
+
+<details>
+  <summary>Git Bash</summary>
+  <br>
+  <ul>
+    <li>Git Bash comes as a part of the <a href = "https://gitforwindows.org/">Git For Windows</a> package.
+      <ol>
+        <li>Download and install Git for Windows like any other Windows application.</li>
+        <li>Run the installation wizard that opens when the application `(.exe)` file is clicked and execute Git Bash.</li>
+      </ol>
+    </li>
+    <li>Git Bash can be used to run Git directly fromt the command line.</li>
+  </ul>
+  <br>
+</details>
+
+2. Change the current working directory to the location where you want the cloned directory.
+3. Type `git clone`, and then paste the URL you copied earlier.
+
+```bash
+$ git clone https://github.com/Nand-Sara/nsara_project_2.git
+```
+
+4. Press **Enter** to create a local clone of the repository.
+
+<br>
+
+[(Back to top)](#table-of-contents)
+
+<br>
+
 ## Development
+
+<br>
 
 ### Code Used
 
@@ -191,10 +250,14 @@ This project can be used as a template or as reference for front end development
 
 [(Back to top)](#table-of-contents)
 
+<br>
+
 ## License
 [MIT](https://opensource.org/license/mit/)
 
 [(Back to top)](#table-of-contents)
+
+<br>
 
 ## Resources
 
@@ -203,6 +266,8 @@ This project can be used as a template or as reference for front end development
 - Icons: [Font Awesome](https://fontawesome.com/icons)
 
 [(Back to top)](#table-of-contents)
+
+<br>
 
 ## References
 
