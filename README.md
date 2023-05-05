@@ -181,7 +181,7 @@ This project can be used as a template or as reference for front end development
 
 To run this project locally the following methods can be used:
 
-### Clone the Repository with HTTPS URLs
+### Clone the Repository with HTTPS URLs (on Web Browser)
 
 #### Step 1: Copy the URL
 
@@ -231,6 +231,63 @@ $ git clone https://github.com/Nand-Sara/nsara_project_2.git
 
 4. Press **Enter** to create a local clone of the repository.
 
+<br><br>
+
+### Clone the Repository with HTTPS URLs (on Desktop)
+
+#### Step 1: Navigate to the main page of the Repository
+
+1. Visit the main page of the repository: [GitHub Repo](https://github.com/Nand-Sara/nsara_project_2)
+2. Click on **<> Code** and click **Open with GitHub Desktop**
+
+Download GitHub Desktop for Windows [here](https://desktop.github.com/)
+
+#### Step 2: Clone the Repository
+
+3. Once the, **Clone the Repository** dialog box opens, click on the **URL** tab.
+4. Enter the local directory or click on **Choose...** to find a local path where you want the repository to be cloned.
+5. Click **Clone**. 
+
+<br><br>
+
+### Clone the Repository using GitHub CLI
+
+#### Step 1: Copy the command
+
+1. Visit the main page of the repository: [GitHub Repo](https://github.com/Nand-Sara/nsara_project_2)
+2. Click on **<> Code** and copy the command from the **GitHub CLI** tab
+
+<br>
+
+![Cloning using GitHub cli](https://nand-sara.github.io/nsara_project_2/assets/documentation/cli-clone.png "Copy the link on the GitHub CLI tab")
+
+*Copy the URL on the GitHub CLI tab*
+
+(Or)
+
+Copy the command from below: 
+```sh
+gh repo clone Nand-Sara/nsara_project_2
+```
+
+#### Step 2: Clone the Repository
+
+1. Enter the above command in the command line or terminal.
+2. Click **Enter**.
+3. Alternatively, you can use the absolute URL for cloning:
+
+```sh
+gh repo clone https://github.com/Nand-Sara/nsara_project_2
+```
+
+<br><br>
+
+### Download the entire directory as a zip file
+
+1. Visit the main page of the repository: [GitHub Repo](https://github.com/Nand-Sara/nsara_project_2)
+2. Click on **<> Code** and click **Download ZIP**
+3. You can now work with a local copy of the project.
+
 <br>
 
 [(Back to top)](#table-of-contents)
@@ -239,8 +296,6 @@ $ git clone https://github.com/Nand-Sara/nsara_project_2.git
 
 ## Development
 
-<br>
-
 ### Code Used
 
 - HTML
@@ -248,12 +303,16 @@ $ git clone https://github.com/Nand-Sara/nsara_project_2.git
 - JavaScript
 - JQuery
 
+<br>
+
 [(Back to top)](#table-of-contents)
 
 <br>
 
 ## License
 [MIT](https://opensource.org/license/mit/)
+
+<br>
 
 [(Back to top)](#table-of-contents)
 
@@ -265,6 +324,8 @@ $ git clone https://github.com/Nand-Sara/nsara_project_2.git
 - Images: [Freepik](https://www.freepik.com/)
 - Icons: [Font Awesome](https://fontawesome.com/icons)
 
+<br>
+
 [(Back to top)](#table-of-contents)
 
 <br>
@@ -275,5 +336,7 @@ $ git clone https://github.com/Nand-Sara/nsara_project_2.git
 - [README Template](https://github.com/navendu-pottekkat/awesome-readme/blob/master/README-template.md)
 - [Basic Syntax Markdown Guide](https://www.markdownguide.org/basic-syntax/)
 - [W3schools](https://www.w3schools.com/)
+
+<br>
 
 [(Back to top)](#table-of-contents)
