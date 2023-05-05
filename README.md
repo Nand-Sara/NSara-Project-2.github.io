@@ -3,8 +3,12 @@
 
 # Project 2 - Landing Page
 
+<br>
+
 ## Aim
 This project aims to create a landing page template from scratch that engages the visitor with an interactive experience.
+
+<br>
 
 ## Description
 A landing page is a static webpage that contains specific information of a product or service offered by a company.
@@ -21,6 +25,8 @@ Major features of a landing page include:
 - Focus on a specific campaign and prevent distractions.
 - Call to action by offering a valuable asset in exchange for contact information.
 
+<br>
+
 ## Demo
 To view the webpage, click the following link: [Landing Page](https://nand-sara.github.io/nsara_project_2/index.html)
 
@@ -29,6 +35,7 @@ To view the webpage, click the following link: [Landing Page](https://nand-sara.
 
 To view the project on GitHub, click the following link: [GitHub Project](https://github.com/Nand-Sara/nsara_project_2/)
 
+<br><br>
 
 # Table of Contents
 
@@ -44,6 +51,7 @@ To view the project on GitHub, click the following link: [GitHub Project](https:
 - [Resources](#resources)
 - [References](#references)
 
+<br>
 
 ## Features
 
@@ -57,6 +65,7 @@ To ensure that the webpage adapts to all device screen sizes I have used,
 - Font size and scale transformations to fit within the device width.
 
 To check the responsiveness of the page follow the below steps:
+
 #### Step 1: Inspect element
 **Right click** on the webpage and click on **Inspect**.
 
@@ -78,7 +87,32 @@ Click on the dropdown menu and select **Responsive** for checking the responsive
 ![Responsive](https://nand-sara.github.io/nsara_project_2/assets/documentation/responsive.png "Responsive")
 *Click on the device toggle and choose Responsive on the device dropdown list* 
 
+<br><br>
+
 ### 2. Browser Compatible
+
+The webpage was developed using HTML5, CSS and JavaScript which is fully functional in the following browsers:
+
+<table>
+  <tr>
+    <th>Browser</th>
+    <td>Chrome</td>
+    <td>Edge</td>
+    <td>Firefox</td>
+    <td>Internet Explorer</td>
+    <td>Opera</td>
+  </tr>
+  <tr>
+    <th>Is Supported?</th>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>v 11.0</td>
+    <td>Yes</td>
+  </tr>
+</table>
+
+<br><br>
 
 ### 3. Easy Navigation
 
@@ -95,14 +129,44 @@ The navigation bar display automatically switches from horizontal to vertical fo
 
 The section which in the viewport is highlighted on scroll.
 
+<br><br>
+
 ### 4. Interactive
+
+The page is built with collapsible sections, enabling an engaging and interactive experience for the users.
+
+![Interactive sections](https://nand-sara.github.io/nsara_project_2/assets/documentation/interactive.png "Section Open")
+*Section Open*
+
+<br>
+
+![Interactive sections](https://nand-sara.github.io/nsara_project_2/assets/documentation/interactive_1.png "Section Open")
+*Section Close*
+
+<br><br>
 
 ### 5. Smooth Scroll
 
+To ensure smooth scrolling behavior, a jquery library has been used. Whenever a link is clicked to an anchor on the same page, the browser changes the position within the viewport from the originating link that is clicked to the destination anchor on the same page with an animated effect.
+
+<br><br>
+
 ### 6. Highlight Active Section
+
+An active class has been added to each section to highlight the section that is open.
+
+A hover effect has also been added whenever the mouse hovers over a section.
+
+<br>
+
+![Active State](https://nand-sara.github.io/nsara_project_2/assets/documentation/active-state.png "Highlight active sections and hover sections")
+*[From top] Different colors added to the section that is being moused over, not active and active*
+
+<br>
 
 [(Back to top)](#table-of-contents)
 
+<br>
 
 ## Installation
 
