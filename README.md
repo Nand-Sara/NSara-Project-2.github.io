@@ -181,6 +181,11 @@ This project can be used as a template or as reference for front end development
 
 To run this project locally the following methods can be used:
 
+- [Clone the Repository with HTTPS URLs (on Web Browser)](#clone-the-repository-with-https-urls-on-web-browser)
+- [Clone the Repository with HTTPS URLs (on Desktop)](#clone-the-repository-with-https-urls-on-desktop)
+- [Clone the Repository using GitHub CLI](#clone-the-repository-using-github-cli)
+- [Download ZIP file](#download-the-entire-directory-as-a-zip-file)
+
 ### Clone the Repository with HTTPS URLs (on Web Browser)
 
 #### Step 1: Copy the URL
@@ -231,7 +236,11 @@ $ git clone https://github.com/Nand-Sara/nsara_project_2.git
 
 4. Press **Enter** to create a local clone of the repository.
 
-<br><br>
+<br>
+
+[(Installation)](#installation)
+
+<br>
 
 ### Clone the Repository with HTTPS URLs (on Desktop)
 
@@ -248,7 +257,11 @@ Download GitHub Desktop for Windows [here](https://desktop.github.com/)
 4. Enter the local directory or click on **Choose...** to find a local path where you want the repository to be cloned.
 5. Click **Clone**. 
 
-<br><br>
+<br>
+
+[(Installation)](#installation)
+
+<br>
 
 ### Clone the Repository using GitHub CLI
 
@@ -280,13 +293,21 @@ gh repo clone Nand-Sara/nsara_project_2
 gh repo clone https://github.com/Nand-Sara/nsara_project_2
 ```
 
-<br><br>
+<br>
+
+[(Installation)](#installation)
+
+<br>
 
 ### Download the entire directory as a zip file
 
 1. Visit the main page of the repository: [GitHub Repo](https://github.com/Nand-Sara/nsara_project_2)
 2. Click on **<> Code** and click **Download ZIP**
 3. You can now work with a local copy of the project.
+
+<br>
+
+[(Installation)](#installation)
 
 <br>
 
